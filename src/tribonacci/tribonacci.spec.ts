@@ -1,7 +1,7 @@
 import { tribonacci } from "./tribonacci";
 
 function tester(sig: [number, number, number], n: number, exp: number[]) {
-    return it(
+    it(
         `tribonacci([${sig[0]}, ${sig[1]}, ${sig[2]}], ${n})`, 
         () => expect(tribonacci(sig, n)).toEqual(exp)
     );

@@ -1,7 +1,7 @@
 import { multiplicationTable } from "./multiplicationTable";
 
 function tester(size: number, expected: number[][]) {
-    return it(
+    it(
         `can handle ${size}x${size} table`, 
         () => expect(multiplicationTable(size)).toEqual(expected)
     );
